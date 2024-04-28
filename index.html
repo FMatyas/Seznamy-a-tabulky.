@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznamy a tabulky</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <h1>Seznamy a tabulky</h1>
+    <h2>Tvorba seznamů</h2>
+    <h3>USPOŘÁDANÝ SEZNAM (ORDERED LIST)</h3>
+        <p>
+        <ol>1. Google Chrome</ol>
+        <ol>2. Internet Explorer</ol>
+        <ol>3. Mozilla Firefox</ol>
+        </p>
+        <h3>NEUSPOŘÁDANÝ SEZNAM (UNORDERED LIST)</h3>
+        <p>
+            <ul>• IP adresy (např. IPv4: 192.168.23.1. IPv6: )</ul>
+            <ul>• DNS adresy (např. strojky.opava.cz)</ul>
+            <ul>• URL adresy (např. hhtp://moodle.sspu-opava.cz:81/course/view.php?id=95)</ul>
+        </p>
+        <h3>VNOŘENÝ SEZNAM</h3>
+        <p>
+            <ul>• Hardware
+                <ol>I. Základní jednotka 
+                    <ol>a. procesor (CPU)</ol>
+                    <ol>b. paměť (RAM)</ol>
+                    <ol>c. pevný disk (HDD)</ol>
+                </ol>
+                <ol>II. Vstupní zařízení
+                    <ol>a. klávesnice</ol>
+                    <ol>b. myš</ol>
+                </ol>
+                <ol>III. Výstupní zaařízení
+                    <ol>a. monitor</ol>
+                    <ol>b. tiskárna</ol>
+                </ol>
+            </ul>
+            <ul>• Software
+                <ol>I. Základní programové vybavení
+                    <ol>a. operační systémy</ol>
+                    <ol>b. ovladač</ol>
+                    <ol>c. firmware</ol>
+                </ol>
+                <ol>II. Aplikace
+                    <ol>a. textový editor</ol>
+                    <ol>b. prohlížeč</ol>
+                    <ol>c. antivirový program</ol>
+                </ol>
+            </ul>
+        </p>
+        <h3>POPISNÝ SEZNAM (DESCRIPTION LIST)</h3>
+        <p>
+            <b>Internet Society (ISOC)</b>
+            <ul>Mezinárodní organizace pro globální koordinaci a kooperaci v rámci internetu.</ul>
+            <b>World Wide Web Consortium (W3C)</b>
+            <ul>Mezinárodní konsorcium,
+                jehož členové společně s veřejností vyvíjejí webové standarty pro službu WWW.</ul>
+            <b>Internet Assigned Numbers Authority (IANA)</b>
+            <ul>Organizace, která dohlíží celosvětově na přidělování IP adres,
+                správu kořenových zón DNS, definování typů medií pro MIME a další náležitosti internetových protokolů.
+            </ul>
+        </p>
+        <h2>Tvorba tabulek</h2>
+        <p>
+            Komplexní tabulka v HTML může být tvořena záhlavím, tělem a zápatím.
+            Pomocí atributů <b>colspan</b> a <b>rowpan</b> můžeme vytvořit sloučené buňky,
+            které přesahují přes více sloupců i řádků.
+        </p>
+        <table>
+            <caption class="nadpis-tabulka"><i>Studijní obory na SŠPU Opava-školní rok 2016/17</i></caption>
+        <thead>
+            <tr>
+                <th rowspan="2" colspan="2"><b>Název oboru</b></th>
+                <th rowspan="2" colspan="3"><b>Kód oboru</b></th>
+                <th rowspan="2"><b>Počet tříd</b></th>
+                <th colspan="3"><b>Počty žáků</b></th>
+            </tr>
+            <tr>
+                <th><b>Chlapci</b></th>
+                <th><b>Dívky</b></th>
+                <th><b>Celkem</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" class="obory">Informační technoloogie</th>
+                <th colspan="3" class="obory">18-20-M/01</th>
+                <th class="cislo">4</th>
+                <th class="cislo">104</th>
+                <th class="cislo">1</th>
+                <th class="cislo">105</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="obory">Strojírenství</th>
+                <th colspan="3" class="obory">23-41-M/01</th>
+                <th class="cislo">5</th>
+                <th class="cislo">135</th>
+                <th class="cislo">1</th>
+                <th class="cislo">136</th>
+            </tr>
+            <tr>
+                <th colspan="2" class="obory">Umělecké obory</th>
+                <th colspan="3" class="obory">82-41-M/04, 82-41-M/05, 82-41-M/08</th>
+                <th class="cislo">4</th>
+                <th class="cislo">20</th>
+                <th class="cislo">74</th>
+                <th class="cislo">94</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5" class="obory">Celkové údaje</th>
+                <th> <mark class="mark">13 tříd</mark></th>
+                <th colspan="3"> <mark class="mark">335 žáků</mark></th>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
